@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script type="text/javascript">     
+<!--function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if ( (charCode > 31 && charCode < 48) || charCode > 57) {
+            return false;
+        }
+        return true;
+    }
+
+	</script>
+	
+	<style>
+		.mar{margin-left:50px};
+		.comment{
+margin-left: 20px;
+box-shadow: 0 2px 0 #e6e6e6;
+height: 40px;
+padding-left: 10px;
+width: 650px;
+height: 200px;
+}
+.navbar-custom {
+    background-color:#3b5998;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #33aa33;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#33aa33;
+}
+.help{
+    	margin: 20px;
+    }
+</style>
+<style>
+#accordion .panel-heading {
+  padding: 0;
+}
+
+#accordion .panel-title>a {
+  display: block;
+  padding: 0.4em 0.6em;
+  outline: none;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#accordion .panel-title>a.accordion-toggle::before,
+#accordion a[data-toggle="collapse"]::before {
+  content: "\e113";
+  float: right;
+  font-family: 'Glyphicons Halflings';
+  margin-right: 1em;
+}
+
+#accordion .panel-title>a.accordion-toggle.collapsed::before,
+#accordion a.collapsed[data-toggle="collapse"]::before {
+  content: "\e114";
+}
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Railway Voice</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+ <style>
+ 
+ .mar{
+		margin-left:150px;
+ 
+ }
+ .ma{
+		margin-top:150px;
+ 
+ }
+ .blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:3s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: #3b5998;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+ 
+ </style>
+ </head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">RAIL-Voice</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">&nbsp;<span class="glyphicon glyphicon-volume-up"></span> VOICE 2 RAILWAY <span class="glyphicon glyphicon-home"></span> </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="RV.html">Register Complaint &nbsp; <span class="glyphicon glyphicon-pencil"></span> </a>
+						
+                    </li>
+                    <li>
+                        <a href="suggestion.html">Suggestion &nbsp;  <span class="glyphicon glyphicon-thumbs-up"></span></a>
+                    </li>
+                    <li>
+                        <a href="trc.html">Track Complaint &nbsp; <span class="glyphicon glyphicon-search"></span></a>
+                    </li>
+					
+					<li>
+                        <a href="aboutus.html">Contact Us &nbsp; <span class="glyphicon glyphicon-info-sign"></span></a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+   
+
+    <!-- Page Content -->
+     <div align="center" class="ma"><b><font size="8" >Need Help!</font></b><br><br>
+  	 
+	
+
+                
+               
+			<div class="help">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading"> 
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"><b>1.Complaint Form</b> </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul type="disk">
+							<p align=""><b>Step1:</b> Go to the Complaint Form by Clicking on Register Complaint Menu.<br>
+							<b>Step2:</b> Enter your all valid details about your self and also about journey.<br> 
+							<b>Step3:</b> Provide all details about the station where you found the problems.<br>
+							<b>Step4:</b> After Submitting all details properly you will get complaint number, by using that complaint number you can track the progress of your complaint.<br>
+							 </p>
+						</ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"><b>2.Suggestion Form</b></a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p><b>Step1:</b> Go to the Suggestion Form by Clicking on Suggestion Menu.<br>
+							<b>Step2:</b> Enter your all valid details about your self and also about journey.<br> 
+							<b>Step3:</b> Provide all details about the station where you want to give suggestion as well as you think we did our work appropriately than you can give us words with appreciation.<br>
+							<b>Step4:</b> After Submitting all details properly you will redirecting to homepage.<br>
+							 </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"><b>3.Track Complaint</b></a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p><b>Step1:</b> Go to the Track Complaint Form by Clicking on Track Complaint Menu.<br>
+							<b>Step2:</b> By Providing your Complaint Number that you got at the time of Register Complaint. You will get Status of your Complaint.<br>
+							 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<blockquote><p class="blink_text"><strong>Note:</strong> Click on the linked heading Text or arrows on the right side to expand or collapse accordion panels.</p></blockquote>
+</div>
+		
+
+	
+	<!-- Quotes ROWs	
+	<div class="container">
+	<div class="row">
+            <div class="col-sm-12">
+                <h4 class="page-header text-center" > *Enter your complaint number correctly. 
+        
+                </h1>
+                <ol class="breadcrumb">
+                    
+                </ol>
+            </div>
+        </div>
+		<div class="row">
+            <div class="col-lg-12">
+            
+            </div>
+        </div>
+		</div>
+        <!-- /.row -->   
+   <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 2000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
